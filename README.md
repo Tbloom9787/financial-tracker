@@ -1,9 +1,9 @@
 # FinancialTracker
-CPSC 362: Software Engineer Project - FinancialTracker is a financial analysis tool that implements a web scraper to crawl the Yahoo Finance API. The data is then stored in our own Django REST API to be used for visualization and algorithmic predictions of the individual stocks. The final product will be a web application with frontend in HTML5, CSS3, and Vue.js using the Vuetify Framework requesting to our backend Django API. 
+FinancialTracker is a financial analysis tool that implements a web scraper to crawl the Yahoo Finance API. The data is then stored in our own Django REST API to be used for visualization and algorithmic predictions of the individual stocks. The final product will be a web application with frontend in HTML5, CSS3, and Vue.js using the Vuetify Framework requesting to our backend Django API. 
 
 ## Getting Started
 
-First, to get started on deployment you must clone the github repository. Go to the desired directory to place the project and clone the repository in a Git Bash terminal using the command 'git clone https://github.com/Abeeaad97/FinancialTracker.git. After doing so, enter in to the project directory and follow steps under "Installing".
+First, to get started on deployment you must clone the github repository. Go to the desired directory to place the project and clone the repository in a Git Bash terminal using the command 'git clone https://github.com/Tbloom9787/FinancialTracker.git. After doing so, enter in to the project directory and follow steps under "Installing".
 
 ### Prerequisites
 
@@ -40,23 +40,16 @@ python manage.py runserver
 
 ## Running the tests
 
-In the project main directory, locate the spiders folder and stocks.py Python script. This is where we temporarily test the scraper and loading it to the database. Run the following command and the data can be found in the Django UI.
+In the project main directory, locate the spiders folder and stocks.py Python script. This is where we temporarily test the scraper and loading it to the database. Run the following command and the data can be found in the Django UI. 
 
 ```
 python stocks.py
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+Celery brokers are used to crawl stocks, indices, and cryptocurrencies all at once (with repeated sleep cycle) with the following command:
 ```
-Give an example
+celery -A tasks worker --loglevel=INFO
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -85,9 +78,3 @@ See also the list of [contributors](https://github.com/your/project/contributors
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
