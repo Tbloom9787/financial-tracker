@@ -12,9 +12,6 @@ To run the application you will need the latest version of Node.js and npm insta
 Windows 10 
 ```
 python -m install -U pip
-pip install django
-pip install djangorestframework
-pip install django-filter
 ```
 
 ### Installing
@@ -34,6 +31,7 @@ npm run serve
 In a separate terminal:
 cd C:/Users/username/Documents/FinancialTracker
 cd backend
+pip install requirements.txt
 winpty python manage.py createsuperuser
 python manage.py runserver
 ```
