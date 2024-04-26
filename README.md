@@ -1,13 +1,8 @@
 # FinancialTracker
 FinancialTracker is a financial analysis tool that implements a web scraper to crawl the Yahoo Finance API. The data is then stored in our own Django REST API to be used for visualization and algorithmic predictions of the individual stocks. The final product will be a web application with frontend in HTML5, CSS3, and Vue.js using the Vuetify Framework requesting to our backend Django API.
 
-Demo images of UI:
+Demo image of UI:
 ![image](https://github.com/Tbloom9787/financial-tracker/assets/32347949/0980a781-315a-43f2-bc08-605789fccf21)
-![image](https://github.com/Tbloom9787/financial-tracker/assets/32347949/33c076a7-8e76-468f-a06a-007378d686af)
-![image](https://github.com/Tbloom9787/financial-tracker/assets/32347949/a0c8f150-3573-4d07-bd03-942b40551721)
-![image](https://github.com/Tbloom9787/financial-tracker/assets/32347949/24c34cff-c1f3-45ec-bb89-1f24e14d2043)
-![image](https://github.com/Tbloom9787/financial-tracker/assets/32347949/fec3e7cc-f92b-4c79-86e9-6132af4d4301)
-
 
 ## Getting Started
 
